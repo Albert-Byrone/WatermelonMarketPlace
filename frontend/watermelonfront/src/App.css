@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --stepNumber: 6;
+  --containerWidth: 600px;
+  --bgColor: #333;
+  --inputBorderColor: lightgray;
+}
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: rgb(63 63 70);
+
+}
+.container {
+  width: 600px;
+  background: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 50px 35px 10px 35px;
+}
+#result_container{
+    height:90vh;
+    width: 90vw;
+ }
+ section{
+    width:inherit;
+    height: inherit;
+ }
+.container .form__container {
+  width: 100%;
+  overflow: hidden;
+}
+.container .form__container form {
+  display: flex;
+  width: calc(100% * 6);
+}
+.form__container form .content__container {
+  width: calc(100% / 6r));
+  transition: margin-left 0.3s ease-in-out;
+}
+.form__container form .content__container .title {
+  text-align: left;
+  font-size: 25px;
+  font-weight: 500;
+}
+.form__container form .content__container .field {
+  width: var(--containerWidth);
+  height: 45px;
+  margin: 45px 0;
+  display: flex;
+  position: relative;
+}
+form .content__container .field .label {
+  position: absolute;
+  top: -30px;
+  font-size:13px;
+}
+form .content__container .field input {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  border: 1px solid var(--inputBorderColor);
+  border-radius: 5px;
+  padding-left: 15px;
+  margin: 0 1px;
+  font-size: 18px;
+  transition: border-color 150ms ease;
+}
+
+form .content__container .field select {
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+}
+.btn {
+  width: 100% !important;
+  height: calc(100% + 5px) !important;
+  border: none !important;
+  background: #333 !important;
+  margin-top: -20px !important;
+  border-radius: 5px !important;
+  color: #fff !important;
+  cursor: pointer !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  transition: 0.5s ease !important;
+  margin: 0 3px 0 3px !important;
+}
+form .content__container .field button:hover {
+  background: #000;
+}
+
+@media screen and (max-width: 490px) {
+  :root {
+    --containerWidth: 100%;
+  }
+  .container {
+    box-sizing: border-box;
+    border-radius: 0;
+  }
+}
