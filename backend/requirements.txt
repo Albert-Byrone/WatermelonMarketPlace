@@ -8,7 +8,7 @@ greenlet==2.0.2
 h11==0.14.0
 httptools==0.5.0
 idna==3.4
-psycopg2-binary==2.9.6
+psycopg2-binary
 pydantic==1.10.7
 pyhumps==3.8.0
 python-dotenv
