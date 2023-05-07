@@ -1,7 +1,7 @@
 import axios from 'axios'
 
-const GET_URL = 'http://127.0.0.1:8080/surveys'
-const POST_URL = 'http://127.0.0.1:8080/survey'
+const GET_URL = 'https://watermellonbackend.onrender.com/surveys'
+const POST_URL = 'https://watermellonbackend.onrender.com/survey'
 
 const getSurveys = async () => {
     const config ={
