@@ -9,7 +9,7 @@ export const Results = () => {
   const [surveys, setSurveys] = useState([])
 
   const getData  =  async () =>{
-      const data = await axios.get('http://127.0.0.1:8080/surveys')
+      const data = await axios.get('https://watermellonbackend.onrender.com/surveys')
       setSurveys(data.data.data.surveys)
       return data.data.data.surveys
   }

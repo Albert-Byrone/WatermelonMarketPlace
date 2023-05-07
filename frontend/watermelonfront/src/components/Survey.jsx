@@ -23,7 +23,7 @@ export const Survey = () => {
       setStep(step + 1);
     } else {
       try {
-        await axios.post('http://127.0.0.1:8080/survey', formData);
+        await axios.post('https://watermellonbackend.onrender.com/survey', formData);
         Swal.fire({
           icon: 'success',
           title: 'Your work has been saved',

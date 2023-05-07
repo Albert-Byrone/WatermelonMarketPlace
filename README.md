@@ -1,7 +1,7 @@
 # Survey
 
 This website allows to easy onboarding of sellers  to watermelon marketplace
-
+    
 ## Table of Content
 
 + [Description](##description)
@@ -26,6 +26,7 @@ This website allows to easy onboarding of sellers  to watermelon marketplace
 
 
 ### Frontend
+[Link](https://watermellonfrnt.onrender.com/)
 
     * Navigate to the project directory with the command `cd frontend`
 
@@ -39,6 +40,8 @@ This website allows to easy onboarding of sellers  to watermelon marketplace
     your terminal eg 5174.
 
 ### Backend
+
+[Link](https://watermellonbackend.onrender.com/redoc)
 
 #### Setup
 
